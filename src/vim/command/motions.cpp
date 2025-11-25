@@ -255,11 +255,9 @@ Variant VimCommand::move_to_next_char(Ref<VimPosition> cur, Dictionary args, Ref
     Ref<VimPosition> old_pos = memnew(VimPosition(cur->line, cur->column));
    
     CharIterator* it = editor_adaptor->chars(cur->line, start_col, forward, true);
-    print_line("wow");
     if(!it->init()) {
         return Variant();
     }
-    print_line("wow2");
     
     do {
         Ref<VimCharPos> ch = it->get();
