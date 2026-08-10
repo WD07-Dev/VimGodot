@@ -12,4 +12,4 @@ config_version=5
 
 config/name="test"
 config/features=PackedStringArray("4.5")
-config/icon="res://icon.svg"
+config/icon="uid://b3v18uck0x2d1"

@@ -1,34 +1,31 @@
 # VimGodot
 
 <div align="center">
-  <img src="./godot/addons/VimGodot/icon.png" alt="VimGodot Icon" width="100"/>
-  <p><em>Godot Script Editor에서 Vim의 강력함을 경험하세요</em></p>
+  <img src="./godot/icon.png" alt="VimGodot Icon" width="100"/>
+  <p><em>Experience the power of Vim in the Godot Script Editor</em></p>
 </div>
 
-## 🚀 소개
-VimGodot는 Godot 게임 엔진의 스크립트 편집기에서 Vim의 강력한 기능을 사용할 수 있도록 해주는 플러그인입니다. 이 플러그인을 통해 개발자는 익숙한 Vim 키 바인딩과 명령어를 활용하여 생산성을 높일 수 있습니다.
+## 🚀 Introduction
 
-## 🔥 주요 기능
-- **Vim 키 바인딩 지원**: 일반 모드, 삽입 모드, 비주얼 모드 등 Vim의 다양한 모드를 지원합니다.
-- **명령어 모드**: Vim의 명령어 모드를 통해 파일 탐색, 편집, 저장 등을 빠르게 수행할 수 있습니다.
-- **커스터마이징 가능**: 사용자가 원하는 대로 키 바인딩과 설정을 조정할 수 있습니다.
+VimGodot is a plugin that brings the powerful features of Vim to the Godot game engine's script editor. It allows developers to improve their productivity by using familiar Vim keybindings and commands directly within Godot.
 
-## 🛠 커스텀 설정
-- `res://addons/VimGodot/conf/key_maping.json`: VimGodot의 키 바인딩 설정 파일입니다. 이 파일을 수정하여 원하는 키 바인딩을 설정할 수 있습니다.
-- `res://addons/VimGodot/conf/keys_white_list.json`: 특정 키를 화이트리스트에 추가하여 VimGodot가 해당 키 입력을 무시하도록 설정할 수 있습니다.
-- 설정 후 Godot 에디터를 재시작하거나, 커맨드 팔레트에서 "VimGodot: Reload Settings" 명령어를 실행하여 변경 사항을 적용하세요.
-- 자세한 설정은 [setting.md](docs/setting.md) 파일을 참고하세요.
+## 🔥 Features
 
-## 🏗️ 아키텍처
+* **Vim Keybindings**: Supports various Vim modes, including Normal, Insert, and Visual modes.
+* **Command Mode**: Use Vim-style commands to quickly navigate files, edit code, save changes, and more.
+* **Customizable**: Customize keybindings and settings to suit your workflow.
 
-- **[VimCore](src/vim/main.h)**: 세션 관리, 레지스터, 매크로 시스템
-- **[EditorAdaptor](src/vim/editor_adaptor.h)**: Godot 에디터 인터페이스 레이어
-- **[CommandDispatcher](src/vim/command_dispatcher.h)**: 키 입력을 명령으로 변환
-- **[Commands](src/vim/command/)**: 모든 Vim 명령 구현체
+## 🛠 Custom Configuration
 
-### 🎵 특별 감사
-- [godot-vim](https://github.com/joshnajera/godot-vim): 이 프로젝트는 godot-vim 프로젝트에서 영감을 받았습니다.
+* `res://addons/VimGodot/conf/key_maping.json`: The keybinding configuration file for VimGodot. Edit this file to customize your keybindings.
+* `res://addons/VimGodot/conf/keys_white_list.json`: Add specific keys to the whitelist to make VimGodot ignore those key inputs.
+* After changing the settings, restart the Godot editor or run the **"VimGodot: Reload Settings"** command from the Command Palette to apply the changes.
+* For more information about configuration, see [setting.md](docs/setting.md).
 
-## 📄 라이선스
+### 🎵 Special Thanks
 
-이 프로젝트는 [MIT License](LICENSE) 하에 배포됩니다.
+* [godot-vim](https://github.com/joshnajera/godot-vim): This project was inspired by godot-vim.
+
+## 📄 License
+
+This project is distributed under the [MIT License](LICENSE).
