@@ -1,0 +1,17 @@
+~*
+*.dll
+
+*.os
+*.o
+*.tmp
+*.import
+*.uid
+*.swp
+
+.sconsign.dblite
+.vscode
+godot/.godot
+godot/addons/VimGodot/lib/*
+godot-cpp
+VimGodot_Plugins.zip
+build.sh
